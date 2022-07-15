@@ -1,0 +1,28 @@
+package xmlStudy;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class NewTest3 
+{
+   @Test(groups="sanity")
+   public void MyMethod1()
+   {
+	   Reporter.log("MyMethod 1 is running ", true);
+   }
+   @Test
+   public void MyMethod2()
+   {
+	   Reporter.log("MyMethod 2 is running ", true);
+   }
+   @Test(groups="sanity")
+   public void MyMethod3()
+   {
+	   Reporter.log("MyMethod 3 is running ",true);
+   }
+   @Test(groups="regression")
+   public void MyMethod4()
+   {
+	   Reporter.log("MyMethod 4 is running ",true);
+   }
+}
